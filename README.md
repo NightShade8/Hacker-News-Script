@@ -1,5 +1,19 @@
 # Hacker-News-Script
-This Bash script retrieves the top 5 stories from Hacker News using the Hacker News API. It first fetches the list of top story IDs, then queries the API for each story's details and extracts the title using jq. The script outputs the titles of the top 5 stories in a simple, readable format.
 
-For my local machine, I used the alias hn to make use more efficient. 
-  to do this, go into your .bashrc (or .zshrc) file and at the very end, add alias hackernews="~/hacker-news.sh 
+A simple Bash script that fetches and displays the top 5 stories from Hacker News.
+
+## 🚀 Features
+- Retrieves the top 5 story IDs from the Hacker News API.
+- Fetches each story's title using `curl` and `jq`.
+- Outputs the titles in a readable format.
+
+## 🛠 Prerequisites
+Ensure you have the following installed:
+- `curl`
+- `jq` (for processing JSON)
+
+You can install `jq` using:
+```bash
+sudo apt install jq  # Debian/Ubuntu
+sudo yum install jq  # RHEL/CentOS
+brew install jq      # macOS
